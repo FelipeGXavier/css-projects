@@ -8,8 +8,31 @@
 
 body {
   box-sizing: border-box;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+
+  @include respond(tablet-port) {
+    padding: 0;
+  }
 }
 
 html{
   font-size: 62.5%;
+
+  @include respond(tablet-land) {
+    font-size: 56.25%;    
+  }
+
+  @include respond(tablet-port) {
+    font-size: 50%;    
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;    
+  }
+
 }

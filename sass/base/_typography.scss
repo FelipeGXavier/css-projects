@@ -2,12 +2,15 @@
   color: white;
   text-transform: uppercase;
   margin-bottom: 6rem;
-
   &--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
+    @include respond(mobile) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub{
@@ -15,6 +18,10 @@
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.9rem;
+
+    @include respond(mobile) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -27,6 +34,14 @@
   letter-spacing: .2rem;
   color: transparent;
   display: inline-block;
+
+  @include respond(table-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary{
@@ -42,11 +57,3 @@
   }
 }
 
-body {
-  font-family: 'Lato';
-  font-weight: 400;
-  font-size: $default-font-size;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-}
