@@ -7,6 +7,12 @@
   padding: 8rem 8rem 12rem 8rem;
   transform: skewX(-12deg);
 
+  @include respond(tablet-port) {
+    padding: 3rem 3rem 5rem 3rem;
+    width: 100%;
+    transform: skewX(0deg);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -15,11 +21,18 @@
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    ;
+
+    @include respond(tablet-port) {
+      transform: translateX(0) skewX(0);
+    }
   }
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(tablet-port) {
+      transform: skewX(0deg);
+    }
   }
 
   img {
