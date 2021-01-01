@@ -42,6 +42,7 @@ body {
 .header {
   display: flex;
   height: 7rem;
+  font-size: 1.6rem;
   background-color: white;
   border-bottom: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   justify-content: space-between;
@@ -58,7 +59,6 @@ body {
   flex: 0 0 18%; }
 
 .hotel-view {
-  background-color: orangered;
   flex: 1;
   height: 80rem; }
 
@@ -176,3 +176,60 @@ body {
   font-size: 1.2rem;
   padding: 2.5rem;
   color: var(--color-grey-light-1); }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__icon-star, .overview__icon-pin {
+    font-size: 1.75rem;
+    margin-top: -2px;
+    margin-right: 5px;
+    color: var(--color-primary); }
+  .overview__stars {
+    display: flex;
+    margin-right: auto; }
+  .overview__location {
+    display: flex;
+    align-items: center; }
+  .overview__rating {
+    align-self: stretch;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+  .overview__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300; }
+  .overview__rating-count {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  margin-right: 5rem;
+  display: inline-block;
+  background-color: transparent;
+  transition: all .2s; }
+  .btn-inline:hover {
+    color: var(--color-grey-dark-1); }
