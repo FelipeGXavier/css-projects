@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/8362592be6.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/logo.png" class="logo" alt="">
 
-                <form action="" class="search">
-                    <input type="text" class="search__input" placeholder="Search text">
-                    <button class="search__button">
-                        <i class="fas fa-search search__icon"></i>
-                    </button>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8362592be6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <i class="fas fa-bookmark user-nav__icon"></i>
-                        <span class="user-nav__notification">7</span>
-                    </div>
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
 
-                    <div class="user-nav__icon-box">
-                        <i class="fas fa-comment-alt user-nav__icon"></i>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="" class="user-nav__photo">
-                        <span class="user-nav__user-name">Jonas</span>
-                    </div>
-                </nav>
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    Navigation
-                </nav>
-                <main class="hotel-view">
-                    Hotel main
-                </main>
-            </div>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" class="logo" alt="">
+
+            <form action="" class="search">
+                <input type="text" class="search__input" placeholder="Search text">
+                <button class="search__button">
+                    <i class="fas fa-search search__icon"></i>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <i class="fas fa-bookmark user-nav__icon"></i>
+                    <span class="user-nav__notification">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <i class="fas fa-comment-alt user-nav__icon"></i>
+                    <span class="user-nav__notification">13</span>
+                </div>
+
+                <div class="user-nav__user">
+                    <img src="img/user.jpg" alt="" class="user-nav__photo">
+                    <span class="user-nav__user-name">Jonas</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <div class="side-nav__box">
+                            <i class="side-nav__icon fas fa-home"></i>
+                            </div>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <div class="side-nav__box">
+                                <i class="side-nav__icon fas fa-key"></i>
+                            </div>
+                            <span>Car rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <div class="side-nav__box">
+                            <i class="side-nav__icon fas fa-plane"></i>
+                        </div>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <div class="side-nav__box">
+                            <i class="side-nav__icon fas fa-map-marker-alt"></i>
+                        </div>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    <p>&copy; 2017 by trillo. All rights reserved.</p>
+                </div>
+            </nav>
+            <main class="hotel-view">
+                Hotel main
+            </main>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
