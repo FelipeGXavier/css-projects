@@ -102,6 +102,11 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
@@ -109,8 +114,11 @@
       margin-bottom: .5rem;
     }
 
+    @media screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
     &--active {
-      width: 100%;
       background-color: var(--color-primary);
     }
   }
@@ -144,6 +152,11 @@
     align-items: center;
     padding: 1.5rem 3rem;
 
+    @media screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
   }
 
   &__box {
@@ -162,6 +175,10 @@
   font-size: 1.2rem;
   padding: 2.5rem;
   color: var(--color-grey-light-1);
+
+  @media screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 
@@ -246,8 +263,6 @@
   }
 }
 
-.detail {}
-
 .paragraph {
   &:not(:last-of-type) {
     margin-bottom: 2rem;
@@ -263,9 +278,16 @@
   display: flex;
   flex-wrap: wrap;
 
+
+
   &__item {
     flex: 0 0 50%;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+   
   }
 
 }
@@ -281,12 +303,18 @@
     margin-right: auto;
   }
 
+
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     border: 3px solid white;
+
     &:not(:last-child) {
       margin-right: -1.5rem;
       
@@ -301,6 +329,15 @@
   margin-bottom: 3.5rem;
   overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 2.75rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    margin-right: 0;
+  }
 
   &__box {
     display: flex;
